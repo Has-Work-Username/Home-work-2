@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+header {
+    width: 100%;
+    min-width: 37.5rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 1.6rem;
+    z-index: 1;
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: #000 (0 0 10px 0);
+
+    .logo {
+        padding: .8rem 1.6rem;
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+        letter-spacing: .5rem;
+    }
+    
+    .logo:hover {
+        cursor: pointer;
+        background-color:  rgb(202, 200, 200);
+    }
+
+    nav a {
+        display: inline-block;
+        padding: .8rem 1.6rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: .5rem;
+        color: #000 !important;
+    }
+    nav a:hover {
+        cursor: pointer;
+        background-color: rgb(202, 200, 200);
+    }
+}     
+
+.header__sub {
+    width: 100%;
+    padding: 45rem  2rem 5rem;
+    background-image: url(./images/hamburger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    p{
+        font-size: 3.6rem;
+        letter-spacing: .5rem;
+        color: rgb(104, 103, 103);
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 2.4rem;
+    padding: 6.4rem 15rem;
+
+    .left-image {
+        width: 50%;
+        
+        img {
+            width: 100%;
+            opacity: .7
+        }
+    }
+
+    .description {
+        width: 50%;
+        padding: 1.2rem 2.4rem;
+        text-align: center;
+
+        h2 {
+            font-weight: 400;
+            font-size: 3.6rem;
+            letter-spacing: .5rem;
+        }
+
+        h4 {
+            margin: 4rem 0 2rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            letter-spacing: .5rem;
+        }
+
+        p {
+            text-align: start;
+            font-weight: 400;
+            font-size: 1.8rem;
+        }
+        
+        .sub__text {
+            margin-top: 2rem;
+            text-align: start;
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: rgb(104, 103, 103);
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        display: block;
+        text-align: center;
+        nav {
+            display: none;
+        }
+    }
+    .header__sub {
+        background-size: 100%;
+        p {
+            display: none;
+        }
+    }
+    main {
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .header__sub {
+        margin: 0 auto;
+        width: 320px;
+        height: 250px;
+    }
+    main {
+        .left-image {
+            width: 320px;
+        }
+        .description {
+            width: 320px;
+            padding: 0;
+        }
+    }
+}

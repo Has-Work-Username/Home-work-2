@@ -1,0 +1,176 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  min-width: 37.5rem;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .8rem 1.6rem;
+  z-index: 1;
+  color: #000 !important;
+  background-color: #fff !important;
+  -webkit-box-shadow: #000 0 0 10px 0;
+          box-shadow: #000 0 0 10px 0;
+}
+
+header .logo {
+  padding: .8rem 1.6rem;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+}
+
+header .logo:hover {
+  cursor: pointer;
+  background-color: #cac8c8;
+}
+
+header nav a {
+  display: inline-block;
+  padding: .8rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .5rem;
+  color: #000 !important;
+}
+
+header nav a:hover {
+  cursor: pointer;
+  background-color: #cac8c8;
+}
+
+.header__sub {
+  width: 100%;
+  padding: 45rem  2rem 5rem;
+  background-image: url(./images/hamburger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__sub p {
+  font-size: 3.6rem;
+  letter-spacing: .5rem;
+  color: #686767;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+  padding: 6.4rem 15rem;
+}
+
+main .left-image {
+  width: 50%;
+}
+
+main .left-image img {
+  width: 100%;
+  opacity: .7;
+}
+
+main .description {
+  width: 50%;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+}
+
+main .description h2 {
+  font-weight: 400;
+  font-size: 3.6rem;
+  letter-spacing: .5rem;
+}
+
+main .description h4 {
+  margin: 4rem 0 2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: .5rem;
+}
+
+main .description p {
+  text-align: start;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+main .description .sub__text {
+  margin-top: 2rem;
+  text-align: start;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #686767;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  header nav {
+    display: none;
+  }
+  .header__sub {
+    background-size: 100%;
+  }
+  .header__sub p {
+    display: none;
+  }
+  main {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header__sub {
+    margin: 0 auto;
+    width: 320px;
+    height: 250px;
+  }
+  main .left-image {
+    width: 320px;
+  }
+  main .description {
+    width: 320px;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
